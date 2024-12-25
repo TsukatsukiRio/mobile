@@ -1,0 +1,46 @@
+{ 
+  "dev": [
+      {
+          "link": "mktw.html",
+          "content": "火影忍者"
+      },
+      {
+          "link": "mktw1.html",
+          "content": "海贼王"
+      },
+      {
+          "link": "mktw2.html",
+          "content": "七龙珠"
+      },
+      {
+          "link": null,
+          "content": "作品名字"
+      },
+      {
+          "link": null,
+          "content": "作品名字"
+      }
+  ],
+  "items": [
+    {
+      "link": "mktw.html",
+      "image": "img\\hyrz.jpg",
+      "name": "火影忍者"
+    },
+    {
+      "link":"mktw1.html",
+      "image": "img\\hzw.jpg",  
+      "name": "海贼王" 
+    },
+    {
+      "link":"mktw2.html",
+      "image": "img\\DRAGON BALL\\fm.jpg",  
+      "name": "七龙珠" 
+    },
+    {
+      "link": null,
+      "image": "img\\011.jpg",  
+      "name": "另一个作品名字" 
+    }
+  ]
+}

@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>火影忍者</title>
+  <link rel="stylesheet" href="css\mktw.css">
+</head>
+<body>
+  <header>
+   <div class="top1">
+   <b>我的收藏</b>
+   <button onclick="goBack()">返回上一页</button>
+   </div>
+  </header>
+  <section>
+    <div class="box1">
+  <div class="boxs">
+   </div>
+    <div class="zl">
+      <ul class="zpmz">
+        <li>作品名字:<span></span></li>
+        <li>NARUTO</li>
+        <li>导演：<span></span></li>
+        <li>类型:<span></span></li>
+        <li>语言：<span></span></li>
+        <li>上映时间：<span></span></li>
+      </ul>
+    </div>
+    </div>
+    <div class="box2">
+      <h3>作品简介</h3>
+      <div class="js">
+       <p data-clamp="3" data-content="《火影忍者》（日语：NARUTO -ナルト-），通常简称为/火影/，为日本漫画家岸本齐史创作的少年漫画，讲述忍者世界里围绕着身为对手的漩涡鸣人和宇智波佐助另两人，与其他角色的故事经历。漫画自1999年开始在日本集英社旗下的少年漫画杂志《周刊少年Jump》上连载。2002年，由日本动画工作室Studio Pierrot根据漫画原作所改编制作的电视动画版《火影忍者》开始在日本东京电视台播出。2004年，漫画进而改编成电影。2006年，漩涡鸣人入选美国《新闻周刊》日文版于10月18日发行的特集中选出的“全世界最受尊敬的100位日本人”">　
+        《火影忍者》（日语：NARUTO -ナルト-），通常简称为/火影/，为日本漫画家岸本齐史创作的少年漫画，讲述忍者世界里围绕着身为对手的漩涡鸣人和宇......
+       </p>
+       <a class="expand" href="javascript:;" style="float:right;">展开</a>
+      </div>
+    </div>
+    <div class="box3">
+      <h3>演职人员</h3>
+      <div class="yy">
+        <ul class="na">
+        </ul>
+      </div>
+    </div>
+    <div class="jz">
+      <h3>剧照/预告</h3>
+      <div class="jz1">
+      <div class="qer">
+        <img src="img\合影.jpg">
+        <img src="img\合影1.jpg">
+        <img src="img\brz.jpg">
+        <img src="img\rzzl.jpg">
+      </div>
+      </div>
+    </div>
+    <footer>
+
+    </footer>    
+  </section>
+  <script>
+    // 获取所有带有data-clamp属性的p元素，这里假设页面中只有这一处需要此功能，如果有多个需适当调整选择逻辑
+    const clampedParagraphs = document.querySelectorAll('p[data-clamp]');
+    
+    // 遍历每个这样的p元素
+    clampedParagraphs.forEach((paragraph) => {
+        const originalText = paragraph.getAttribute('data-content');
+        const currentText = paragraph.textContent;
+        const isTruncated = currentText.length < originalText.length;
+        const expandLink = paragraph.nextElementSibling;
+    
+        if (isTruncated && expandLink && expandLink.classList.contains('expand')) {
+            expandLink.addEventListener('click', function () {
+                paragraph.textContent = originalText;
+                expandLink.style.display = 'none';
+            });
+        }
+    });
+    function goBack() {
+      window.location.href = document.referrer;
+    }
+
+
+    </script>
+    <script src="js/script1.js"></script>
+</body>
+</html>

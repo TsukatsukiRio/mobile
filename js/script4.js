@@ -1,4 +1,4 @@
-fetch('js/one piece/test2.json')
+fetch('js/Stranger Things/test2.json')
 .then(response => {
    if (!response.ok) {
      throw new Error('Network response was not OK');
@@ -31,7 +31,7 @@ fetch('js/one piece/test2.json')
 });
  document.addEventListener('DOMContentLoaded', function () {
    // 使用fetch获取外部JSON文件
-   fetch('js/one piece/workInfo1.json')
+   fetch('js/Stranger Things/workInfo2.json')
     .then(response => response.json())
     .then(workInfo => {
        const spans = document.querySelectorAll('span');
@@ -45,7 +45,7 @@ fetch('js/one piece/test2.json')
 //   
 document.addEventListener('DOMContentLoaded', function () {
    // 使用fetch获取actors.json文件
-   fetch('js/one piece/actors1.json')
+   fetch('js/DRAGONStranger Things/actors2.json')
   .then(response => response.json())
   .then(actors => {
        // 获取类名为'na'的ul元素

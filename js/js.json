@@ -13,12 +13,8 @@
           "content": "七龙珠"
       },
       {
-          "link": null,
-          "content": "作品名字"
-      },
-      {
-          "link": null,
-          "content": "作品名字"
+          "link": "mktw3.html",
+          "content": "怪奇物语"
       }
   ],
   "items": [
@@ -38,9 +34,9 @@
       "name": "七龙珠" 
     },
     {
-      "link": null,
-      "image": "img\\011.jpg",  
-      "name": "另一个作品名字" 
+      "link": "mktw3.html",
+      "image": "img\\Stranger Things\\fm.jpg",  
+      "name": "怪奇物语" 
     }
   ]
 }

@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>七龙珠</title>
+  <link rel="stylesheet" href="css\mktw.css">
+</head>
+<body>
+  <header>
+   <div class="top1">
+   <b>怪奇物语</b>
+   <button onclick="goBack()">返回上一页</button>
+   </div>
+  </header>
+  <section>
+    <div class="box1">
+  <div class="boxs">
+   </div>
+    <div class="zl">
+      <ul class="zpmz">
+        <li>作品名字:<span></span></li>
+        <li>Stranger Things</li>
+        <li>导演：<span></span></li>
+        <li>类型:<span></span></li>
+        <li>语言：<span></span></li>
+        <li>上映时间：<span></span></li>
+      </ul>
+    </div>
+    </div>
+    <div class="box2">
+      <h3>作品简介</h3>
+      <div class="js">
+       <p data-clamp="3" data-content="《怪奇物语》（英语：Stranger Things）是一部由达菲兄弟创作的美国科幻恐怖剧集，于2016年7月15日在Netflix首播[4]。截至2022年，本剧共播出四季。2022年2月，官方宣布续订第五季，同时也是最后一季。
+       故事发生在1980年代的印地安纳州的霍金斯镇，讲述通往“颠倒世界”的传送门经一次儿童实验开启，自此颠倒世界的事物便逐渐蔓延至整座小镇。本剧无论在剧情、演出与配乐方面都向80年代的经典电影及剧集致敬，如史蒂文·斯皮尔伯格、约翰·卡本特、斯蒂芬·金和乔治·卢卡斯等[5]，因而本剧播出后获得了极高的评价。">　
+       《怪奇物语》（英语：Stranger Things）是一部由达菲兄弟创作的美国科幻恐怖剧集，于2016年7月15日在Netflix首播[4]。截至2022年，本剧共播出四季。2022年2月，官方宣布续订第五季，同时也是最后一季。......
+       </p>
+       <a class="expand" href="javascript:;" style="float:right;">展开</a>
+      </div>
+    </div>
+    <div class="box3">
+      <h3>演职人员</h3>
+      <div class="yy">
+        <ul class="na">
+        </ul>
+      </div>
+    </div>
+    <div class="jz">
+      <h3>剧照/预告</h3>
+      <div class="jz1">
+      <div class="qer">
+        <img src="img\Stranger Things\bj2.jpeg">
+        <img src="img\Stranger Things\bj3.jpeg">
+        <img src="img\Stranger Things\bj3.jpg">
+        <img src="img\Stranger Things\bj4.jpg">
+      </div>
+      </div>
+    </div>
+    <footer>
+
+    </footer>    
+  </section>
+  <script>
+    // 获取所有带有data-clamp属性的p元素，这里假设页面中只有这一处需要此功能，如果有多个需适当调整选择逻辑
+    const clampedParagraphs = document.querySelectorAll('p[data-clamp]');
+    
+    // 遍历每个这样的p元素
+    clampedParagraphs.forEach((paragraph) => {
+        const originalText = paragraph.getAttribute('data-content');
+        const currentText = paragraph.textContent;
+        const isTruncated = currentText.length < originalText.length;
+        const expandLink = paragraph.nextElementSibling;
+    
+        if (isTruncated && expandLink && expandLink.classList.contains('expand')) {
+            expandLink.addEventListener('click', function () {
+                paragraph.textContent = originalText;
+                expandLink.style.display = 'none';
+            });
+        }
+    });
+    function goBack() {
+      window.location.href = document.referrer;
+    }
+
+
+    </script>
+    <script src="js/script4.js"></script>
+</body>
+</html>
